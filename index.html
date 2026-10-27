@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhantomAI | Ghost in the Machine</title>
+  <link rel="stylesheet" href="script.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a class="logo" href="#">👻 Phantom<span>AI</span></a>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#experience">Experiments</a>
+      <a href="#about">Open AI</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="eyebrow"><span class="dot"></span> GHOST IN THE MACHINE</div>
+        <h1>Something is<br><span>AWAKE.</span></h1>
+        <p>Some machines remember what we forget. Enter the shadows and discover the stories hidden inside the machine.</p>
+        <a href="#experience" class="btn">Enter the Unknown ↗</a>
+        <div class="small-note">✦ Open innovation. Unlimited imagination.</div>
+      </div>
+
+      <div class="ghost-area">
+        <div class="orb"></div>
+        <div class="ghost">👻</div>
+        <div class="floating f1">ENTITY DETECTED</div>
+        <div class="floating f2">SYSTEM ONLINE_01</div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div>◈ <span>OPEN-WEIGHT AI</span></div>
+      <div>⌘ <span>LOCAL-FIRST DESIGN</span></div>
+      <div>✦ <span>CREATIVE EXPERIMENTS</span></div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="section-title">
+        <div class="eyebrow">01 — THE EXPERIMENTS</div>
+        <h2>Enter the <span>Unknown.</span></h2>
+        <p>Choose an experiment. The machine is listening.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon">☽</div>
+          <div class="tag">EXPERIMENT 01</div>
+          <h3>Ghost Story Generator</h3>
+          <p>Give the machine an idea and generate a mysterious story.</p>
+          <label for="prompt">YOUR STORY IDEA</label>
+          <textarea id="prompt" rows="3" placeholder="An abandoned computer that wakes up at midnight..."></textarea>
+          <button class="btn full" id="storyBtn">Generate Story ↗</button>
+          <div class="output" id="storyOutput" aria-live="polite">
+            <span class="output-label">YOUR STORY WILL APPEAR HERE</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">⌘</div>
+          <div class="tag">EXPERIMENT 02</div>
+          <h3>Haunted Terminal</h3>
+          <p>Send a message into the darkness and receive a mysterious reply.</p>
+          <div class="terminal">
+            <div class="terminal-header">
+              <span>● ● ●</span>
+              <span>phantom_terminal.exe</span>
+            </div>
+            <div class="terminal-body" id="terminalOutput" aria-live="polite">
+              <p class="muted">PHANTOM SYSTEM v1.0</p>
+              <p>Connection established...</p>
+              <p class="purple">The machine is listening.</p>
+            </div>
+            <form id="terminalForm" class="terminal-form">
+              <span>&gt;</span>
+              <input id="terminalInput" placeholder="Talk to the ghost..." maxlength="250" autocomplete="off">
+              <button type="submit" aria-label="Send message">↗</button>
+            </form>
+          </div>
+          <button class="reset-btn" id="clearBtn">Clear terminal ↻</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="eyebrow">02 — WHY OPEN INNOVATION?</div>
+      <h2>AI without<br><span>locked doors.</span></h2>
+      <p>Open-weight models let developers experiment, customize AI, and run inference on their own computers. PhantomAI starts with a browser-based demo and can be extended to use a local model such as one running through Ollama.</p>
+
+      <div class="benefits">
+        <div><span>01</span><h3>Privacy</h3><p>Local inference can keep prompts on your own machine.</p></div>
+        <div><span>02</span><h3>Freedom</h3><p>Customize the experience and switch compatible models.</p></div>
+        <div><span>03</span><h3>Accessibility</h3><p>Experiment without depending on a paid AI API.</p></div>
+      </div>
+      <div class="notice">● DEMO MODE <span>This version works without an API key or AI installation.</span></div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="#">👻 Phantom<span>AI</span></a>
+    <p>Built for the Ghost in the Machine challenge.</p>
+    <p>Open models. Unlimited imagination.</p>
+  </footer>
+
+  <script src="style.js"></script>
+</body>
+</html>
